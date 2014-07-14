@@ -2,7 +2,7 @@ var gcm = require('node-gcm');
 var message = new gcm.Message();
  
 //API Server Key
-var sender = new gcm.Sender('AIzaSyCsJwIosqUgTmImNFQYOzyrTvbgu493ltE');
+var sender = new gcm.Sender('AIzaSyCNK_2q6MtvaRpbhl-2taOp492nsL7TrFs');
 var registrationIds = [];
  
 // Value the payload data to send...
