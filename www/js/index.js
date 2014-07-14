@@ -69,7 +69,7 @@ var app = {
                 {
                     console.log("Regid " + e.regid);
                     alert('registration id = '+e.regid);
-                    document.getElementById("msg").innerHTML = "XX: <input type="text" value='" + e.regid + "'>" + e.regid";
+                    document.getElementById("msg").innerHTML = "XX: <input type="text" value='" + e.regid + "'>" + e.regid;
 
                 }
             break;
