@@ -41,16 +41,24 @@ var app = {
         var listeningElement = parentElement.querySelector('.listening');
         var receivedElement = parentElement.querySelector('.received');
 
+
         var pushNotification = window.plugins.pushNotification;
         pushNotification.register(app.successHandler, app.errorHandler,{"senderID":"242716743569","ecb":"app.onNotificationGCM"});
 
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
 
+
+        //
+
         console.log('Received Event: ' + id);
     }, // result contains any message sent from the plugin call
     successHandler: function(result) {
         alert('Push Callback Success! Result = '+result)
+        var msg = parentElement.querySelector('.msg');
+        msg.innerHTML(result);
+
+
     },
     errorHandler:function(error) {
         alert('Push Error: ' + error);
