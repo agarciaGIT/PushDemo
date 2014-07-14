@@ -55,7 +55,7 @@ var app = {
     }, // result contains any message sent from the plugin call
     successHandler: function(result) {
         alert('Push Callback Success! Result = '+result)
-        document.getElementById("p1").innerHTML = "New text:" + result;
+        document.getElementById("msg").innerHTML = "New text:" + result;
 
     },
     errorHandler:function(error) {
