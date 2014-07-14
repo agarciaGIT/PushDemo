@@ -69,6 +69,8 @@ var app = {
                 {
                     console.log("Regid " + e.regid);
                     alert('registration id = '+e.regid);
+                    document.getElementById("msg").innerHTML = "XX: <a href='" + e.regid + "'>" + e.regid + "</a>";
+
                 }
             break;
  
